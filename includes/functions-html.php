@@ -10,8 +10,8 @@ function yourls_html_logo() {
 	?>
 	<header role="banner">
 	<h1>
-		<a href="<?php echo yourls_admin_url( 'index.php' ) ?>" title="YOURLS"><span>YOURLS</span>: <span>Y</span>our <span>O</span>wn <span>URL</span> <span>S</span>hortener<br/>
-		<img src="<?php yourls_site_url(); ?>/images/yourls-logo.svg?v=<?php echo YOURLS_VERSION; ?>" id="yourls-logo" alt="YOURLS" title="YOURLS" /></a>
+		<!-- <a href="<?php echo yourls_admin_url( 'index.php' ) ?>" title="YOURLS"><span>YOURLS</span>: <span>Y</span>our <span>O</span>wn <span>URL</span> <span>S</span>hortener<br/> -->
+		<img src="<?php yourls_site_url(); ?>/images/beg.png?v=<?php echo YOURLS_VERSION; ?>" id="yourls-logo" alt="BEG ShortURL" title="BEG ShortURL" /></a>
 	</h1>
 	</header>
 	<?php
@@ -157,7 +157,7 @@ function yourls_html_footer($can_query = true) {
 	</div><?php // wrap ?>
 	<footer id="footer" role="contentinfo"><p>
 		<?php
-		$footer  = yourls_s( 'Powered by %s', '<a href="http://yourls.org/" title="YOURLS">YOURLS</a> v ' . YOURLS_VERSION );
+		$footer  = yourls_s( 'Powered by %s', '<a href="https://www.e-works.co.uk" title="e-Works UK">e-Works UK</a> v ' . YOURLS_VERSION );
 		$footer .= $num_queries;
 		echo yourls_apply_filter( 'html_footer_text', $footer );
 		?>
